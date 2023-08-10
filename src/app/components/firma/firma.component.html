@@ -1,0 +1,24 @@
+<!-- <div>
+    <canvas #canvas
+            (mousedown)="onMouseDown($event)"
+            (mousemove)="onMouseMove($event)"
+            (mouseup)="onMouseUp()">
+    </canvas>
+    <button (click)="clearCanvas()">Limpiar</button>
+    <button (click)="downloadPdf()">Descargar PDF</button>
+  </div>
+   -->
+
+   <div>
+    <canvas #canvas
+            (mousedown)="onMouseDown($event)"
+            (mousemove)="onMouseMove($event)"
+            (mouseup)="onMouseUp()"
+            (touchstart)="onTouchStart($event)"
+            (touchmove)="onTouchMove($event)"
+            (touchend)="onTouchEnd()">
+    </canvas>
+    <button (click)="clearCanvas()">Limpiar</button>
+    <button (click)="downloadPdf()">Descargar PDF</button>
+  </div>
+  
